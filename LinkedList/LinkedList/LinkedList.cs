@@ -76,5 +76,16 @@ namespace DataStructure
             Console.WriteLine("Inserted value is : " + data);
             return head;
         }
+
+        internal Node RemoveFirstNode()
+        {
+            Console.WriteLine("Deleting first Element : ");
+            if (head == null)
+            {
+                return null;
+            }
+            head = head.next;
+            return head;
+        }
     }
 }
